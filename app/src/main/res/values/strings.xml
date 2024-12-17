@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">StoryLensApp</string>
+    <string name="signup">Buat Akun</string>
+    <string name="login">Login</string>
+    <string name="message_welcome_page">Ingin berbagi cerita dan melihat momen seru dari teman-teman? Di StoryLensApp, Anda bisa menjelajahi momen-momen menarik, mengikuti perkembangan harian teman-teman, dan mengabadikan setiap kisah unik Anda. Temukan inspirasi, bagikan pengalaman, dan jadilah bagian dari komunitas yang saling terhubung melalui cerita sehari-hari. Ayo mulai berbagi kisah Anda dengan StoryLensApp!</string>
+    <string name="title_welcome_page">Selamat datang di StoryLensApp</string>
+    <string name="title_signup_page">Kamu belum ada akun? Yuk buat akun</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Isi sesuai arahan ya</string>
+    <string name="title_login_page">Sudah ada akun? Yuk Login</string>
+    <string name="name">Masukkan Nama kamu</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Logout</string>
+    <string name="this_logo">this logo</string>
+    <string name="password_error">password harus lebih dari 8 karakter</string>
+    <string name="email_error">email harus menggunakan @ didalamnya</string>
+    <string name="image">Image</string>
+    <string name="title_story">Pembuat Story</string>
+    <string name="desc">Isi disini itu deskripsi</string>
+    <string name="createat">dibuat ditanggal</string>
+    <string name="add_posting">add posting</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="pilih_akses_gambar">Pilih Akses Gambar</string>
+    <string name="masukkan_deskripsi_image">Masukkan Deskripsi Gambar</string>
+    <string name="description">ketikkan sesuatu...</string>
+    <string name="upload_story">Upload Story</string>
+    <string name="image_warning">masukkan gambar terlebih dahulu</string>
+    <string name="tv_name">Name</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="gmaps">Gmaps</string>
+    <string name="coba_ulangi">Coba Ulangi</string>
+
+</resources>

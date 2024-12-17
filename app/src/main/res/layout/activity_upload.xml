@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.upload.UploadActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<!--bagian progres indicator-->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        pilih akses drimana-->
+        <TextView
+            android:id="@+id/tv_akses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_akses_gambar"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            app:layout_constraintBottom_toTopOf="@id/camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/progressIndicator" />
+
+<!--pilih jika akses camera-->
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_akses"
+            app:layout_constraintEnd_toStartOf="@+id/gallery"/>
+
+<!--pilih jika akses galeri-->
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/camera"
+            app:layout_constraintTop_toBottomOf="@id/tv_akses" />
+
+<!--        ini adalah preview image-->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/camera"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/baseline_image_24"/>
+
+<!--        edit teks untuk deskripsi-->
+        <EditText
+            android:id="@+id/ed_add_description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_ed_add"
+            android:gravity="start|top"
+            android:hint="@string/description"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#888888"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@id/image"
+/>
+<!--        button untuk upload story-->
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/upload_story"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@id/ed_add_description"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
